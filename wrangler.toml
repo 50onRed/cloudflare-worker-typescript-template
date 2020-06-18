@@ -1,0 +1,11 @@
+name = "cloudflare-worker-typescript-template-dev"
+type = "webpack"
+account_id = ""
+workers_dev = true
+webpack_config = "webpack.dev.js"
+
+[env.production]
+name = "cloudflare-worker-typescript-template"
+zone_id = ""
+workers_dev = false
+webpack_config = "webpack.prod.js"

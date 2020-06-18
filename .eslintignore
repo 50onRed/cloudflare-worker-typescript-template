@@ -1,0 +1,7 @@
+webpack.prod.js
+webpack.dev.js
+webpack.common.js
+jest.config.js
+worker/worker.js
+dist/*
+.vscode/*
