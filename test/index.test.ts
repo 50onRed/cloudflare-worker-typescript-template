@@ -20,6 +20,6 @@ describe('worker', () => {
     const request = new Request('/index-test')
     const response = await self.trigger('fetch', request)
 
-    expect(response[0].status).toBeLessThan(500)
+    expect(response.status).toBeLessThan(500)
   })
 })
