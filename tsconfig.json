@@ -83,6 +83,7 @@
   },
   "include": [
     "src/**/*",
-    "test/**/*"
+    "test/**/*",
+    "changelog.ts"
   ]
 }
