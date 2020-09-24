@@ -2,11 +2,14 @@ import PromptSync from 'prompt-sync'
 import fetch from 'node-fetch'
 import child_process from 'child_process'
 
-const prompt = PromptSync({ sigint: true })
+/**
+ * Configure these 3 settings
+ */
 const token = 'fill me in' // see other products for token
 const products = 'someproduct' // example: my-search, pops etc.
-const repo = 'cloudflare-shopify-api'
+const repo = 'repo this code lives' // example: cloudflare-shopify-api
 
+const prompt = PromptSync({ sigint: true })
 const title = prompt('Title (required) ')
 
 if (!title) {
