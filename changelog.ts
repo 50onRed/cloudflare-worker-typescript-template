@@ -8,6 +8,7 @@ import child_process from 'child_process'
 const token = 'fill me in' // see other products for token
 const products = 'someproduct' // example: my-search, pops etc.
 const repo = 'repo this code lives' // example: cloudflare-shopify-api
+const url = 'some url to post to'
 
 const prompt = PromptSync({ sigint: true })
 const title = prompt('Title (required) ')
@@ -28,7 +29,7 @@ const commitHash = child_process
   .toString()
   .trim()
 
-fetch('https://app.rtxplatform.com/webhooks/changelog/', {
+fetch(url, {
   method: 'POST',
   headers: {
     Authorization: `Bearer ${token}`,
